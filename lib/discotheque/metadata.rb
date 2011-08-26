@@ -5,7 +5,7 @@ module Discotheque
 
     def initialize(mock=false)
       if mock == true
-        @image_id = "ami-221fec4b"
+        @image_id = "ami-221fec4b" # amazon linux ami
         @group_name = "default"
         @availability_zone = "us-east-1a"
         return
