@@ -14,7 +14,7 @@ module Discotheque
         begin
           %w[instance-id ami-id security-groups availability-zone].each do |datum|
             datum == "availability-zone" ? url="#{base_url}/placement/#{datum}" : url="#{base_url}#{datum}"
-            d = HTTParty.get("#{url}").parsed_response
+            d = ::HTTParty.get("#{url}").parsed_response
             if datum == "security-groups" 
               instance_variable_set "@group_name", d
             elsif datum == "ami-id"
