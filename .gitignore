@@ -1,0 +1,9 @@
+.rvmrc
+Gemfile.lock
+*.swp
+.gem
+.bundle
+.yardoc
+*.rbc
+loader.rb
+config.yml
